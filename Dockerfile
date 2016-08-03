@@ -7,6 +7,7 @@ ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2
 ENV APACHE_LOCK_DIR /var/run/apache
 ENV PACHE_PID_FILE /var/run/apache/http.pid
+ENV TEST_TO_TRIGGER_BUILD 4-8-2016:851
 RUN mkdir /run/apache
 ADD index.html /var/www/html/index.html
 EXPOSE 80
